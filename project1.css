@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/28/04/31/math-1547018__340.jpg);
+    background-size :cover;
+}
+.nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    background-color: rgb(205, 231, 238);
+}
+
+.nav li {
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: left;
+    background-color: rgb(205, 231, 238);
+    ;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #1d5252;
+    font-weight: 1000;
+    color: aliceblue;
+}
+
+.nav a.active {
+    background-color: rgb(142, 192, 188);
+    color: rgb(39, 43, 45);
+    cursor: default;
+}
+
+.nav a.active:hover {
+    color: rgb(3, 3, 3);
+}
+
+.nav li li {
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+/* หน้าจอใหญ่กว่า */
+@media screen and (min-width:650px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
+
+.nav a {
+    border-bottom: none;
+}
+
+.nav>ul>li {
+    text-align: center;
+}
+
+.nav>ul>li>a {
+    padding-left: 0;
+}
+
+/* sub menu */
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    margin: 5px;
+}
